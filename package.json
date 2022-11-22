@@ -1,0 +1,23 @@
+{
+  "name": "<your-project-name>",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/contracts",
+    "packages/web"
+  ],
+  "scripts": {
+    "web:dev": "yarn workspace web dev",
+    "web:build": "yarn workspace web build",
+    "web:start": "yarn workspace web start",
+    "web:lint": "yarn workspace web lint",
+    "contracts:compile": "yarn workspace contracts compile && yarn workspace contracts copy-typechains-to-web",
+    "contracts:compile:reset": "yarn workspace contracts compile:reset",
+    "contracts:chain": "yarn workspace contracts chain",
+    "contracts:deploy": "yarn workspace contracts deploy",
+    "contracts:test": "yarn workspace contracts test"
+  },
+  "dependencies": {
+    "@web3-react/core": "^6.1.9"
+  }
+}

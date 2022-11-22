@@ -1,0 +1,28 @@
+{
+  "name": "contracts",
+  "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "compile:reset": "rm -rf artifacts && rm -rf cache && rm -rf typechain-types && rm -rf ../web/typechain-types",
+    "chain": "npx hardhat node",
+    "deploy": "rm -f ../web/contractAddresses.ts && touch ../web/contractAddresses.ts && npx hardhat run scripts/deploy.ts --network localhost",
+    "copy-typechains-to-web": "rm -rf ../web/typechain-types && cp -r typechain-types ../web",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
+    "@typechain/ethers-v5": "^10.1.1",
+    "@typechain/hardhat": "^6.1.4",
+    "chai": "^4.3.7",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2",
+    "typechain": "^8.1.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
