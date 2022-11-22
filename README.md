@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is a starter project for developing etherum dApps using Hardhat and NextJS.
+This is a starter project for developing etherum dApps using Hardhat and NextJS. 
+
+In order to be sure everything will work, please use node verson tagged as stable. In order to quickly manage node version you can use npx. Then you can change version using command `nvm use stable`.
 
 ## Getting Started
 
