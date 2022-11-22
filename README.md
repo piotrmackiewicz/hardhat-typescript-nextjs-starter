@@ -9,6 +9,7 @@ This is a starter project for developing etherum dApps using Hardhat and NextJS.
 ### 2. Open terminal and execute following commands:
 
 ```bash
+yarn run setup
 yarn run contracts:compile
 yarn run contracts:chain
 ```
@@ -25,6 +26,8 @@ yarn run web:dev
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Commands
+
+`yarn run setup` - install all dependencies
 
 `yarn run web:dev` - run local development server
 
